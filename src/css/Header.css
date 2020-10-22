@@ -1,0 +1,127 @@
+#home{
+    background-image: url("../assets/img/header/header-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* border-bottom: 2px solid rgb(0, 0, 0, 0.5); */
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+.title__container {
+    color: #ffff;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+.title,
+.title__secendery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title__secendery h4 {
+    font-weight: 400;
+    color: #a8a8a8;
+    font-family: monospace;
+}
+
+.title__secendery span {
+    color: #fff;
+}
+
+
+.next__pager .next__pagerLink {
+    color: white;
+    font-size: 45px;
+}
+
+.next__pager a i {
+    transition: all 0.2s ease-in-out;
+    box-shadow:5px 0px 15px 15px rgb(0, 0, 0,0.2);
+    border-radius: 50%;
+}
+
+.next__pager .next__pagerLink:hover {
+    color: rgb(7, 165, 165);
+}
+
+.header__links {
+    margin-top: 25px;
+}
+
+.header__links a {
+    transition: all 0.3s ease-in-out;
+    color: inherit;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.header__links a:hover {
+    color: rgb(7, 165, 165);
+}
+
+@media only screen and (max-width:768px){
+
+    .title h1{
+        font-size: 70px;
+    }
+
+    .title__secendery h4 {
+        font-size: 14px;
+    }
+
+    .title__container {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width:426px){
+
+        .title h1{
+        font-size: 40px;
+    }
+
+    .title__secendery h4 {
+        font-size: 9px;
+    }
+
+    .title__container {
+        margin-top: 50px;
+    }
+
+    .header__links a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:322px){
+
+    .title h1{
+        font-size: 35px;
+    }
+
+    .title__secendery h4 {
+        font-size: 8px;
+    }
+
+}

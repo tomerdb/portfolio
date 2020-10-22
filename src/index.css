@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background: #0f0f0f;
+    overflow-x: hidden;
+}
+
+body > #root > div {
+    /* height: 100vh; */
+  }

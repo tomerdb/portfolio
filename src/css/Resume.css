@@ -1,0 +1,121 @@
+#resume {
+    background: #fff;
+    /* height: 100vh; */
+    min-width: 100vw;
+    /* background-image: url("../assets/img/about/background.webp"); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    position: relative;
+    
+}
+
+.resume__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education__container, .work__container, .skills__container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100vw;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.school__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-right: 450px;
+    padding-bottom: 100px;
+}
+
+.school__title h3 {
+    font:25px/30px "opensans-bold", sans-serif;
+    font-weight: 600;
+}
+
+.school__secondary{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font: 16px/24px "librebaskerville-italic", serif;
+    color: #6e7881;
+}
+
+.school__third{
+    font-family: 'opensans-regular', sans-serif;
+    color: #838C95;
+    font-size: 13px;
+}
+
+
+.skills__container {
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.resumeTitle__container {
+    position: absolute;
+    top:100px;
+    left: 150px;
+}
+
+.resume__title p {
+    padding: 5px;
+    border-bottom: 0.2rem solid lightblue;
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+    font-weight: 700;
+}
+
+
+.skills__iconsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    /* margin-right: 450px; */
+}
+
+
+.skills__icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.skill__icon {
+    width: 100px;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill__iconContainer i{
+    font-size: 70px;
+}
+
+.skill__iconContainer img{
+    width: 80px;
+}
+
+.skill__title{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#resume__nextPager  i{
+    color: #2b2b2b;
+    transition: 0.2s ease-in-out all;
+}
+
+#resume__nextPager:hover i {
+ color: rgb(7, 165, 165);
+
+}
