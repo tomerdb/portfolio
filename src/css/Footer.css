@@ -31,6 +31,10 @@ footer {
     font-weight: 700;
 }
 
+.credits__container span {
+    color: red;
+}
+
 #go__top{
     position: absolute;
     top: -24px;

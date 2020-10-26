@@ -15,6 +15,25 @@ const App = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+  const handleNextPager = (e) => {
+    const navLinks = document.querySelectorAll(".nav-link");
+    if (e.target.id === "home__i") {
+      navLinks[0].classList.remove("nav-selected");
+      navLinks[1].classList.add("nav-selected");
+    } else if (e.target.id === "about__i") {
+      navLinks[1].classList.remove("nav-selected");
+      navLinks[2].classList.add("nav-selected");
+    } else if (e.target.id === "resume__i") {
+      navLinks[2].classList.remove("nav-selected");
+      navLinks[3].classList.add("nav-selected");
+    } else if (e.target.id === "projects__i") {
+      navLinks[3].classList.remove("nav-selected");
+      navLinks[4].classList.add("nav-selected");
+    } else if (e.target.id === "footer__i") {
+      navLinks[4].classList.remove("nav-selected");
+      navLinks[0].classList.add("nav-selected");
+    }
+  };
   return (
     <div id="app">
       <Router>
@@ -24,43 +43,37 @@ const App = () => {
             exact
             path="/"
             component={() => {
-              return <Home />;
+              return <Home handleNextPager={handleNextPager} />;
             }}
           />
-          {/* <Header /> */}
           <Route
             exact
             path="/about"
             component={() => {
-              return <About />;
+              return <About handleNextPager={handleNextPager} />;
             }}
           />
-          {/* <About /> */}
           <Route
             exact
             path="/resume"
             component={() => {
-              return <Resume />;
+              return <Resume handleNextPager={handleNextPager} />;
             }}
           />
-          {/* <Resume /> */}
           <Route
             exact
             path="/projects"
             component={() => {
-              return <Projects />;
+              return <Projects handleNextPager={handleNextPager} />;
             }}
           />
-          {/* <Projects /> */}
           <Route
             exact
             path="/contact"
             component={() => {
-              return <Contact />;
+              return <Contact handleNextPager={handleNextPager} />;
             }}
           />
-          {/* <Contact /> */}
-          {/* <Footer /> */}
         </Switch>
       </Router>
     </div>

@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./Footer";
 import '../css/Footer.css';
 import "../css/Contact.css";
-function Contact() {
+function Contact({handleNextPager}) {
+    useEffect(() => {
+    document.querySelector(".nav-links").classList.remove("resume-nav");
+    const navLinks = document.querySelectorAll(".nav-link");
+      for (const link of navLinks) {
+        link.classList.remove("nav-selected")
+      }
+      navLinks[4].classList.add("nav-selected");
+  }, [])
+
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("tomerdb@gmail.com");
@@ -72,7 +81,7 @@ function Contact() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   cols="50"
-                  rows="15"
+                  rows="5"
                   id="contactMessage"
                   name="contactMessage"
                 ></textarea>
@@ -96,7 +105,7 @@ function Contact() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer handleNextPager={handleNextPager}/>
     </div>
   );
 }

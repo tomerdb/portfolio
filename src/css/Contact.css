@@ -12,7 +12,7 @@
 }
 
 .contact__container {
-    padding-top: 150px;
+    padding-top: 70px;
 }
 
 .contact__title {
@@ -47,7 +47,7 @@
     margin: 12px 0;
     color: #ebeeee;
     display: inline-block;
-    float: left;
+    /* float: left; */
     width: 26%;
     font-weight: bold;
     font-size: 18px;
@@ -57,12 +57,13 @@
     padding: 18px 20px;
     color: #eee;
     background: #373233;
-    margin-bottom: 42px;
+    margin-bottom: 22px;
     border: 0;
     outline: none;
     font-size: 15px;
     line-height: 24px;
     width: 500px;
+    border-radius: 8px;
 }
 
 #contact button.submit {
@@ -80,6 +81,7 @@
     border-radius: 3px;
     margin-bottom: 50px;
     transition: all 0.20s ease-in-out;
+    border-radius: 8px;
 }
 
 #contact span.required {

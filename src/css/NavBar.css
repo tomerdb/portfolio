@@ -1,5 +1,82 @@
-.nav a {
+body{
+    position: relative;
+}
+
+a { color: inherit;}
+
+nav{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    /* background-color: black; */
+}
+
+.nav-links {
     display: flex;
+    list-style: none;
+    height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.nav-link{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover{
+    color: lightcoral;
+     /* color: rgb(7, 165, 165); */
+}
+
+.nav-selected {
+ /* color: rgb(7, 165, 165); */
+ color: lightcoral;
+}
+ .resume-nav{
+        background-color: black;
+    }
+
+@media only screen and (max-width: 768px){
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    
+    .hamburger{
+        z-index: 2;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .nav-links{
+        pointer-events: none;
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 100% -10%);
+        -webkit-clip-path: circle(0px at 100% -10%);
+        transition: all 1s ease-out;
+    }
+    
+    .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
 }

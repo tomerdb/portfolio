@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/About.css";
 import profilePicture from "../assets/img/about/profile3.jpeg"
 import { Link } from 'react-router-dom';
-function About() {
-
+function About({handleNextPager}) {
+  useEffect(() => {
+    document.querySelector(".nav-links").classList.remove("resume-nav");
+    const navLinks = document.querySelectorAll(".nav-link");
+      for (const link of navLinks) {
+        link.classList.remove("nav-selected")
+      }
+      navLinks[1].classList.add("nav-selected");
+  }, [])
   return (
     <div>
       <section id="about">
@@ -46,11 +53,9 @@ function About() {
               paddingBottom: "20px",            
             }}
           >
-            {/* <a href="#resume"> */}
-              <Link to="/resume" data-aos="fade-zoom-in" data-aos-anchor=".resume__container" className="next__pagerLink">
-              <i style={{boxShadow:"5px 0px 15px 15px rgb(0, 0, 0,0.2)"}} className="fas fa-arrow-circle-down"></i>
+              <Link onClick={handleNextPager} to="/resume" data-aos="fade-zoom-in" data-aos-anchor=".resume__container" className="next__pagerLink">
+              <i id="about__i" style={{boxShadow:"5px 0px 15px 15px rgb(0, 0, 0,0.2)"}} className="fas fa-arrow-circle-down"></i>
               </Link>
-            {/* </a> */}
           </div>
         </div>
       </section>

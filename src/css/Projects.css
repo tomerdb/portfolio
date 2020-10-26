@@ -1,10 +1,12 @@
 #projects {
-    background-image: url("../assets/img/about/background.webp");
-    background-size: cover;
-    background-position: center;
+    /* background-image: url("../assets/img/about/background.webp"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    background:#838C95;
     height: 100vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     position: relative;
+    overflow: hidden;
 }
 
 .projects__wrapper {
@@ -19,6 +21,8 @@
     font-size: 25px;
     font-weight: 500;
     color: silver;
+    font-family: monospace;
+    text-shadow: 1.5px 1.5px rgb(0, 0, 0, 0.3);
 }
 
 .projects__container {
@@ -35,33 +39,93 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .project__box {
-    border: 1px solid black;
-    height: 120px;
-    border-radius: 10px;
+    /* border: 1px solid black; */
+    height: 140px;
+    border-radius: 8px;
     width: 250px;
     align-self: center;
-    background-color: slategray;
+    /* background-color: slategray; */
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
+.project__box a {
+}
+
+.project__box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background:url(../assets/img/projects/overlay-bg.png)
+}
+
+.overlay h5 {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #fff;
+    font: 14px/21px "opensans-bold", sans-serif;
+    }
+
+.overlay p {
+    padding-left: 15px;
+    color: #c6c7c7;
+    font: 12px/18px "opensans-light", sans-serif;
+}
+
+.overlay__icon{
+    text-align: center;
+    color: #fff;
+}
+
+.project__box:hover .overlay{
+    opacity: 1;
+}
 
 .project__button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    margin-top: 5px;
+    padding: 5px;
+    margin: 8px;
     height: 30px;
-    width: 70px;
-    border: 1px solid black;
+    width: 90px;
     border-radius: 10%;
-    background-color: slategray;
+    background: #0d0d0d;
     cursor: pointer;
-    font-weight: 500;
-    color: white;
+    color: #fff;
+    transition: all 0.20s ease-in-out;
+}
+
+.project__button:hover a{
+    color: #0d0d0d;
+}
+.project__button:hover{
+    background: #fff;
+}
+
+.project__button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 #projects__nextPager a{
