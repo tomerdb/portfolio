@@ -1,12 +1,9 @@
 #projects {
-    /* background-image: url("../assets/img/about/background.webp"); */
-    /* background-size: cover; */
-    /* background-position: center; */
     background:#838C95;
-    height: 100vh;
-    /* min-width: 100vw; */
-    position: relative;
+    /* width: 100vw; */
+    min-height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .projects__wrapper {
@@ -26,7 +23,6 @@
 }
 
 .projects__container {
-    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -43,18 +39,13 @@
 }
 
 .project__box {
-    /* border: 1px solid black; */
     height: 140px;
     border-radius: 8px;
     width: 250px;
     align-self: center;
-    /* background-color: slategray; */
     cursor: pointer;
     overflow: hidden;
     position: relative;
-}
-
-.project__box a {
 }
 
 .project__box img {
@@ -134,4 +125,70 @@
 
 #projects__nextPager a:hover{
      color: rgb(7, 165, 165);
+}
+
+@media only screen and (max-width:1445px){
+    .projects__title{
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width:1030px){
+    .projects__title{
+        margin-top: 0px;
+    }
+    .project{
+        width: 300px;
+    }
+    .project__box{
+        width: 200px;
+        height: 100px;
+    }
+    .project__button {
+    letter-spacing: 2px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 8px;
+    height: 20px;
+    width: 70px;
+    border-radius: 10%;
+    background: #0d0d0d;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.20s ease-in-out;
+}
+}
+@media only screen and (max-width:770px){
+        
+    .projects__title{
+        margin-top: -20px;
+    }
+    .project{
+        width: 250px;
+    }
+    .project__box{
+        width: 190px;
+        height: 90px;
+    }
+    
+}
+@media only screen and (max-width:426px){
+        
+    .projects__title{
+        font-size: 18px;
+    }
+    .project{
+        width: 230px;
+        margin-top: 20px;
+    }
+    .project__box{
+        width: 190px;
+        height: 90px;
+    }
+    .project:last-child{
+        padding-bottom: 100px;
+    }
 }
