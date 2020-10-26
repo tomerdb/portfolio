@@ -84,48 +84,7 @@ function Projects({handleNextPager}) {
                 </a>
                 </div>
             </div>
-                        <div data-aos="fade-right" className="project">
-              <div className="project__box">
-                <a href="https://zen-hopper-a64855.netlify.app">
-                <img src={img} alt="twitter-clone"/>
-                <div className="overlay">
-                  <div className="overlay__text">
-                  <h5>twitter-clone</h5>
-                  <p>Express, NodeJS, HTML, CSS</p>
-                  </div>
-                  <div className="overlay__icon">
-                     <i className="fa fa-link"></i>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div className="project__button">
-                <a href="https://github.com/tomerdb/twitter-clone">
-                source
-                </a>
-                </div>
-            </div>
-                        <div data-aos="fade-right" className="project">
-              <div className="project__box">
-                <a href="https://zen-hopper-a64855.netlify.app">
-                <img src={img} alt="twitter-clone"/>
-                <div className="overlay">
-                  <div className="overlay__text">
-                  <h5>twitter-clone</h5>
-                  <p>Express, NodeJS, HTML, CSS</p>
-                  </div>
-                  <div className="overlay__icon">
-                     <i className="fa fa-link"></i>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div className="project__button">
-                <a href="https://github.com/tomerdb/twitter-clone">
-                source
-                </a>
-                </div>
-            </div>
+
           </div>
           <div
             data-aos="zoom-in" data-aos-anchor=".project" className="next__pager" id="projects__nextPager"

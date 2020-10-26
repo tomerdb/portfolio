@@ -1,6 +1,6 @@
 footer {
     padding-top: 48px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     color: #303030;
     font-size: 14px;
     text-align: center;
@@ -58,4 +58,33 @@ footer {
 
 #go__top a:hover {
     background-color: rgb(7, 165, 165);
+}
+
+@media only screen and (max-width:430px){
+    #go__top a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    }
+    .credits__container{
+    font-size: 14px;
+    }
+    .icons__container a {
+    font-size: 25px;
+    }
+}
+@media only screen and (max-width:380px){
+    #go__top a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+    }
+    .credits__container{
+    font-size: 12px;
+    }
+    .icons__container a {
+    font-size: 22px;
+    }
 }

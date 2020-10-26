@@ -25,10 +25,13 @@ function Contact({handleNextPager}) {
     <div>
       <section id="contact">
         <div className="contact__container">
-          <div className="contact__title">
+          <div className="contactTitle__container">
+            <div className="mobile__title">GET IN TOUCH.</div>
+          <div data-aos="fade-right" className="contact__title">
             <i className="far fa-envelope"></i>
           </div>
-          <form id="contactForm" name="contactForm">
+          </div>
+          <form data-aos="fade-in" id="contactForm" name="contactForm">
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -94,9 +97,9 @@ function Contact({handleNextPager}) {
               </div>
             </fieldset>
           </form>
-          <div className="text__container" style={{paddingRight:"100px"}}>
-            <div className="text__title">Address and phone</div>
-            <div className="text__secendery" style={{width:"auto"}}>
+          <div data-aos="fade-left" className="contactText__container">
+            <div className="contactText__title">Address and phone</div>
+            <div className="contactText__secendery">
               <div className="name">Tomer Harari</div>
               <div className="city">Tel aviv-Yafo</div>
               <div className="addres">Merkaz Baalei Melacha 4</div>
