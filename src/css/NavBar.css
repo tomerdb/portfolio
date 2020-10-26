@@ -39,16 +39,18 @@ nav{
  /* color: rgb(7, 165, 165); */
  color: lightcoral;
 }
- .resume-nav{
-        background-color: black;
-    }
+.resume-nav{
+    background-color: black;
+}
 
 @media only screen and (max-width: 768px){
     
     .line{
         width: 30px;
         height: 3px;
-        background: white;
+        /* background: black; */
+        background: lightcoral;
+        /* color: black; */
         margin: 5px;
     }
     

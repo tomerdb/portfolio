@@ -1,3 +1,5 @@
+@import './NavBar.css';
+
 #resume {
     background: #fff;
     height: 100%;
@@ -13,10 +15,24 @@
     align-items: center;
 }
 
+.school__wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.education__container .school__wrapper {
+    padding-top: 170px;
+}
+
+.school__wrapper{
+    padding-top: 150px;
+}
+
 .education__container, .work__container, .skills__container {
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100vw;
     box-shadow: 0 4px 2px -2px rgb(0, 0, 0,0.2);
 }
@@ -24,9 +40,12 @@
 .school__container{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    padding-right: 450px;
-    padding-bottom: 100px;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    
 }
 
 .school__title h3 {
@@ -52,10 +71,17 @@
     padding-bottom: 100px;
 }
 
+.education__container .resumeTitle__container{
+    padding-top: 150px;
+}
+
 .resumeTitle__container {
-    position: absolute;
-    top:100px;
-    left: 150px;
+
+    padding-top: 100px;
+    padding-left:100px;
+    padding-bottom: 100px;
+    width: 20%;
+
 }
 
 .resume__title p {
@@ -64,6 +90,7 @@
     font-size: 20px;
     color: rgb(122, 122, 122);
     font-weight: 700;
+    width: fit-content;
 }
 
 
@@ -71,7 +98,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 150px;
-    /* margin-right: 450px; */
 }
 
 
@@ -84,8 +110,6 @@
 
 .skill__icon {
     width: 100px;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +139,90 @@
 
 }
 
-/* .hamburger{
-    color:black;
-} */
+@media only screen and (max-width: 768px){
+    
+    .education__container .resumeTitle__container{
+        padding-top: 100px;
+    }
+
+    .school__container{
+        margin-left: 100px;
+    }
+
+    .skills__iconsContainer{
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    
+    .resumeTitle__container{
+        padding-top: 60px;
+        padding-left: 30px;
+    }
+
+    .resume__title p {
+        font-size: 14px;
+    }
+    .school__title h3 {
+        font-size: 16px;
+    }
+    .school__secondary{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .school__third{
+        font-size: 10px;
+    }
+
+    .school__container{
+        margin-left: 20px;
+    }
+
+    .skills__iconsContainer{
+        margin-left: -70px;
+    }
+    .skill__iconContainer i{
+    font-size: 40px;
+    }
+
+    .skill__iconContainer img{
+    width: 50px;
+    }
+    
+    .skill__title{
+        font-size: 14px;
+    }
+    
+
+}
+@media only screen and (max-width: 380px){
+
+    .school__container{
+        margin-left: 0px;
+    }
+    .skills__iconsContainer{
+        margin-left: -50px;
+    }
+    .skill__iconContainer i{
+    font-size: 30px;
+    }
+
+    .skill__iconContainer img{
+    width: 40px;
+    }
+    .skill__title{
+        font-size: 11px;
+    }
+    .skills__icons{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+    .skill__icon {
+        width: 70px;
+    }
+
+
+}

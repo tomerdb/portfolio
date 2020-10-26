@@ -22,10 +22,17 @@ function Resume({handleNextPager}) {
                 <p>EDUCATION</p>
               </div>
             </div>
+            <div className="school__wrapper">
             <div data-aos="fade-right" className="school__container">
                 <div className="school__title"><h3>Sv-College</h3></div>
                 <div className="school__secondary">Front-End Course • 2020</div>
                 <div className="school__third">Specialized in ReactJS</div>
+            </div>
+             <div data-aos="fade-right" className="school__container">
+                <div className="school__title"><h3>Sv-College</h3></div>
+                <div className="school__secondary">Front-End Course • 2020</div>
+                <div className="school__third">Specialized in ReactJS</div>
+            </div>
             </div>
           </div>
           <div className="work__container">
@@ -34,14 +41,21 @@ function Resume({handleNextPager}) {
                 <p>WORK</p>
               </div>
             </div>
+              <div className="school__wrapper">
               <div data-aos="fade-right" className="school__container">
                 <div className="school__title"><h3>Wild Dog</h3></div>
                 <div className="school__secondary">COO • 2019 - now</div>
                 <div className="school__third">• built buisness plan</div>
               </div>
+              <div data-aos="fade-right" className="school__container">
+                <div className="school__title"><h3>Wild Dog</h3></div>
+                <div className="school__secondary">COO • 2019 - now</div>
+                <div className="school__third">• built buisness plan</div>
+              </div>
+              </div>
           </div>
           <div className="skills__container">
-            <div data-aos="zoom-in" data-aos-anchor=".school__container" className="resumeTitle__container">
+            <div data-aos="zoom-in" className="resumeTitle__container">
               <div className="resume__title">
                 <p>SKILLS</p>
               </div>
