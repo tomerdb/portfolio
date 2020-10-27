@@ -1,15 +1,8 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import "../css/NavBar.css";
 
 function NavBar() {
-    const navLinks2 = document.querySelectorAll(".nav-link");;
-  // console.log(nav);
-  // useEffect(() => {
-
-  //   console.log("works");
-
-  // }, [section])
 
   const handleHamburger = () => {
     const navLinks = document.querySelector(".nav-links");

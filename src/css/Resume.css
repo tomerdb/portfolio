@@ -69,6 +69,7 @@
 
 .skills__container {
     padding-bottom: 100px;
+
 }
 
 .education__container .resumeTitle__container{
@@ -82,6 +83,10 @@
     padding-bottom: 100px;
     width: 20%;
 
+}
+
+.education__container p {
+    margin-left: -42px;
 }
 
 .resume__title p {
@@ -98,6 +103,10 @@
     display: flex;
     flex-direction: column;
     margin-top: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 130px;
 }
 
 
@@ -142,42 +151,54 @@
 @media only screen and (max-width: 768px){
     
     .education__container .resumeTitle__container{
-        padding-top: 100px;
+        padding-top: 50px;
+    }
+
+    .resumeTitle__container{
+        padding-top:50px
+    }
+    .school__title h3{
+        font-size: 20px;
     }
 
     .school__container{
-        margin-left: 100px;
+        margin-left: -20px;
     }
 
     .skills__iconsContainer{
-        margin-left: 50px;
+        margin-left: 30px;
     }
 }
 
 @media only screen and (max-width: 430px){
     
     .resumeTitle__container{
-        padding-top: 60px;
-        padding-left: 30px;
+        padding-top: 80px;
+        padding-left: 70px;
+    }
+    .education__container .resumeTitle__container{
+        padding-top:80px
     }
 
     .resume__title p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .school__title h3 {
-        font-size: 16px;
+        font-size: 13px;
     }
     .school__secondary{
-        font-size: 14px;
+        font-size: 10px;
         margin-top: 0px;
+        width: 100vw;
     }
 
     .school__third{
         font-size: 10px;
+        width: 80%;
     }
 
     .school__container{
-        margin-left: 20px;
+        margin-left: -40px;
     }
 
     .skills__iconsContainer{
@@ -199,30 +220,34 @@
 }
 @media only screen and (max-width: 380px){
 
-    .school__container{
-        margin-left: 0px;
-    }
-    .skills__iconsContainer{
-        margin-left: -50px;
-    }
-    .skill__iconContainer i{
-    font-size: 30px;
-    }
-
-    .skill__iconContainer img{
-    width: 40px;
-    }
-    .skill__title{
+    .resume__title p {
         font-size: 11px;
     }
-    .skills__icons{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    .education__container p {
+    margin-left: -28px;
+    }
+    .school__title h3 {
+        font-size: 12px;
+    }
+    .resumeTitle__container{
+        padding-top: 80px;
+        padding-left: 50px;
+    }
+    .skill__title{
+        font-size: 12px;
     }
 
+    .skills__iconsContainer{
+        margin-left: -28px;
+    }
     .skill__icon {
         width: 70px;
     }
+}
 
+@media only screen and (max-width: 330px){
 
+    .skills__iconsContainer{
+        margin-left: -44px;
+    }
 }

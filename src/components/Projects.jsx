@@ -91,7 +91,7 @@ function Projects({handleNextPager}) {
             style={{ bottom: 0, position: "absolute", paddingBottom: "20px" }}
           >
             <Link onClick={handleNextPager} to="/contact" className="next__pagerLink">
-              <i id="projects__i" style={{boxShadow:"none"}} className="fas fa-arrow-circle-down"></i>
+              <i style={{boxShadow:"none"}} id="projects__i" className="fas fa-arrow-circle-down"></i>
             </Link>
           </div>
         </div>

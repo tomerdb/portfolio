@@ -25,12 +25,7 @@ function Resume({handleNextPager}) {
             <div className="school__wrapper">
             <div data-aos="fade-right" className="school__container">
                 <div className="school__title"><h3>Sv-College</h3></div>
-                <div className="school__secondary">Front-End Course • 2020</div>
-                <div className="school__third">Specialized in ReactJS</div>
-            </div>
-             <div data-aos="fade-right" className="school__container">
-                <div className="school__title"><h3>Sv-College</h3></div>
-                <div className="school__secondary">Front-End Course • 2020</div>
+                <div className="school__secondary">Front-End Development Course • 2020</div>
                 <div className="school__third">Specialized in ReactJS</div>
             </div>
             </div>
@@ -43,14 +38,17 @@ function Resume({handleNextPager}) {
             </div>
               <div className="school__wrapper">
               <div data-aos="fade-right" className="school__container">
-                <div className="school__title"><h3>Wild Dog</h3></div>
-                <div className="school__secondary">COO • 2019 - now</div>
-                <div className="school__third">• built buisness plan</div>
+                <div className="school__title"><h3>Wild Dog Cold Brew (Start-Up)- Tel Aviv, Israel</h3></div>
+                <div className="school__secondary">Operations Manager • 2019 - Present</div>
+                <div className="school__third">• Product production and marketing</div>
+                <div className="school__third">• Developed business plan</div>
+                <div className="school__third">• General business development; nurtured industry relationships with leading companies</div>
               </div>
-              <div data-aos="fade-right" className="school__container">
-                <div className="school__title"><h3>Wild Dog</h3></div>
-                <div className="school__secondary">COO • 2019 - now</div>
-                <div className="school__third">• built buisness plan</div>
+              <div data-aos="fade-right" data-aos-anchor=".school__wrapper" className="school__container">
+                <div className="school__title"><h3>American Embassy - Tel Aviv, Israel</h3></div>
+                <div className="school__secondary">Security Team Shift Manager • 2017 - 2019</div>
+                <div className="school__third">• Responsible for security team briefings</div>
+                <div className="school__third">• Accountable for visitor and employee safety</div>
               </div>
               </div>
           </div>
@@ -126,7 +124,7 @@ function Resume({handleNextPager}) {
             }}
             >
             <Link onClick={handleNextPager} to="/projects" id="resume__nextPager" className="next__pagerLink">
-              <i id="resume__i" style={{boxShadow:"none"}} className="fas fa-arrow-circle-down"></i>
+              <i id="resume__i" className="fas fa-arrow-circle-down"></i>
             </Link>
           </div>
         </div>
