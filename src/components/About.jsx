@@ -36,7 +36,7 @@ function About({handleNextPager}) {
               </div>
             </div>
             <div data-aos="fade-right" className="resume__container">
-              <a href="https://drive.google.com/file/d/1neXl-9iOyN0nsS274ZBtl9ost-f5Zgv1/view">
+              <a href="https://drive.google.com/file/d/1JOXei6kI2dqODWLTCTGq0wnm2K_fHkYG/view?usp=sharing">
 
               <div className="icon">
                 <i className="fas fa-file-download"></i>
