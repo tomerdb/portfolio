@@ -14,7 +14,7 @@ function Contact({handleNextPager}) {
 
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
-  const [email, setEmail] = useState("tomerdb@gmail.com");
+  const [email] = useState("tomerdb@gmail.com");
   const [message, setMessage] = useState("");
 
   const handleClick = (e) => {
@@ -48,7 +48,7 @@ function Contact({handleNextPager}) {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label htmlFor="contactEmail">
                   Email <span className="required">*</span>
                 </label>
@@ -61,7 +61,7 @@ function Contact({handleNextPager}) {
                   name="contactEmail"
                   onChange={(e) => setEmail(e.target.value)}
                 />
-              </div>
+              </div> */}
 
               <div>
                 <label htmlFor="contactSubject">Subject</label>
@@ -101,9 +101,9 @@ function Contact({handleNextPager}) {
             <div className="contactText__title">Address and phone</div>
             <div className="contactText__secendery">
               <div className="name">Tomer Harari</div>
-              <div className="city">Tel aviv-Yafo</div>
-              <div className="addres">Merkaz Baalei Melacha 4</div>
-              <div className="phone">+972-52-6477-102</div>
+              <div className="addres">4 Merkaz Baalei Melacha</div>
+              <div className="city">Tel Aviv-Yafo, Israel</div>
+              <div className="phone">+972 52-647-7102</div>
             </div>
           </div>
         </div>

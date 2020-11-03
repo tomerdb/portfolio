@@ -40,15 +40,21 @@ function Resume({handleNextPager}) {
               <div data-aos="fade-right" className="school__container">
                 <div className="school__title"><h3>Wild Dog Cold Brew (Start-Up)- Tel Aviv, Israel</h3></div>
                 <div className="school__secondary">Operations Manager • 2019 - Present</div>
-                <div className="school__third">• Product production and marketing</div>
+                <div className="school__third">• Assisted in development during early stages of cold <span id="resume__responsive6">brew start-up </span><br/><span>- Product production and marketing</span><br/><span>- Customer communication</span></div>
                 <div className="school__third">• Developed business plan</div>
-                <div className="school__third">• General business development; nurtured industry relationships with leading companies</div>
+                <div className="school__third">• General business development; nurtured industry <span id="resume__responsive7">relationships <span id="resume__responsive5">with <span id="resume__responsive4">leading companies</span></span></span></div>
               </div>
               <div data-aos="fade-right" data-aos-anchor=".school__wrapper" className="school__container">
                 <div className="school__title"><h3>American Embassy - Tel Aviv, Israel</h3></div>
                 <div className="school__secondary">Security Team Shift Manager • 2017 - 2019</div>
                 <div className="school__third">• Responsible for security team briefings</div>
-                <div className="school__third">• Accountable for visitor and employee safety</div>
+                <div className="school__third">• Accountable for visitor and employee safety <br/><span>- Early promotion to Senior Guard</span><br/><span>- Exhibited excellence, motivation, and ability to <span id="resume__responsive8">perform under <span id="resume__responsive3">pressure <span id="resume__responsive2">while maintaining </span></span></span><span id="resume__responsive">professionalism</span></span></div>
+              </div>
+              <div data-aos="fade-right" data-aos-anchor=".school__wrapper" className="school__container">
+                <div className="school__title"><h3>Abu Kayak</h3></div>
+                <div className="school__secondary">Manager • 2015 - 2017</div>
+                <div className="school__third">• Responsible for operations of kayak site <br/><span>- Manager of 40 employee</span><br/><span>- Responsible for managing work scheduling</span></div>
+                <div className="school__third">• Managed safety briefings for visitors and employees<br/><span>- Responsible for safety and enjoyment of visitors</span></div>
               </div>
               </div>
           </div>
@@ -82,7 +88,7 @@ function Resume({handleNextPager}) {
                   <i className="fab fa-css3-alt" style={{ color: "#1C67BC" }}></i> </div>
               </div>
               </div>
-              <div data-aos="fade-left" className="skills__icons">
+              <div data-aos="fade-left" data-aos-anchor=".skills__icons" className="skills__icons">
                               <div className="skill__icon">
                 <div className="skill__title">NodeJS</div>
                 <div className="skill__iconContainer">
@@ -92,19 +98,19 @@ function Resume({handleNextPager}) {
         ></i>
                 </div>
               </div>
-              <div data-aos="fade-up" className="skill__icon">
+              <div data-aos="fade-up" data-aos-anchor=".skills__icons" className="skill__icon">
                 <div className="skill__title">GitHub</div>
                 <div className="skill__iconContainer">
                          <i className="fab fa-github"></i>
  </div>
               </div>
-              <div data-aos="fade-up" className="skill__icon">
+              <div data-aos="fade-up" data-aos-anchor=".skills__icons" className="skill__icon">
                 <div className="skill__title">MongoDB</div>
                 <div className="skill__iconContainer">
          <img src={mongodbLogo} alt="mongodbLogo"/>
 </div>
               </div>
-              <div data-aos="fade-left" className="skill__icon">
+              <div data-aos="fade-left" data-aos-anchor=".skills__icons" className="skill__icon">
                 <div className="skill__title">FireBase</div>
                 <div className="skill__iconContainer">
                   

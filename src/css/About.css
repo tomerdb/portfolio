@@ -14,7 +14,7 @@
 
 .about__container {
     display: flex;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .profile__container {
@@ -112,6 +112,12 @@
     color: #fff;
 }
 
+@media only screen and (max-width:1442px){
+.about__container {
+    padding-top: 150px;
+}
+}
+
 @media only screen and (max-width:1025px){
 .picture img {
     width: 120px;
@@ -151,6 +157,9 @@
 }
 
 @media only screen and (max-width:769px){
+.about__container {
+    padding-top: 90px;
+}
 .picture img {
     width: 100px;
     height: 100px;

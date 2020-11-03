@@ -24,14 +24,14 @@ function About({handleNextPager}) {
             <div className="text__container">
               <div data-aos="fade-left" className="text__title">About Me</div>
               <div data-aos="fade-right" className="text__secendery">
-              My name is Tomer, I'm a Front-End ReactJS Developer. Recently finished Coding boot-camp at Sv-College highly motivated new developer.
+              Hi, i'm Tomer, I'm a Front-End ReactJS Developer who recently finished Coding boot-camp at Sv-College highly motivated new developer.
               </div>
               <div data-aos="fade-right" className="text__title">Contact Details</div>
               <div data-aos="fade-left" className="text__secendery">
                 <div className="name">Tomer Harari</div>
-                <div className="city">Tel aviv-Yafo</div>
-                <div className="addres">Merkaz Baalei Melacha 4</div>
-                <div className="phone">+972-52-6477-102</div>
+                <div className="addres">4 Merkaz Baalei Melacha</div>
+                <div className="city">Tel Aviv-Yafo, Israel</div>
+                <div className="phone">+972 52-647-7102</div>
                 <div className="mail">Tomerdb@gmail.com</div>
               </div>
             </div>

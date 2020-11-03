@@ -48,6 +48,10 @@
     
 }
 
+.school__container span{
+    padding-left: 8px;
+}
+
 .school__title h3 {
     font:25px/30px "opensans-bold", sans-serif;
     font-weight: 600;
@@ -138,6 +142,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#resume__responsive,#resume__responsive2,#resume__responsive3,#resume__responsive4,#resume__responsive5,#resume__responsive6,#resume__responsive7,#resume__responsive8{
+    padding: 0;
+}
+
 #resume__nextPager  i{
     color: #2b2b2b;
     transition: 0.2s ease-in-out all;
@@ -150,6 +158,10 @@
 
 @media only screen and (max-width: 768px){
     
+    #resume__responsive{
+        padding-left: 16px;
+    }
+
     .education__container .resumeTitle__container{
         padding-top: 50px;
     }
@@ -171,7 +183,15 @@
 }
 
 @media only screen and (max-width: 430px){
-    
+    #resume__responsive{
+        padding: 0;
+    }
+    #resume__responsive4{
+        padding-left: 8px;
+    }
+    #resume__responsive2{
+        padding-left: 16px;
+    }
     .resumeTitle__container{
         padding-top: 80px;
         padding-left: 70px;
@@ -194,11 +214,11 @@
 
     .school__third{
         font-size: 10px;
-        width: 80%;
+        width: 100%;
     }
 
     .school__container{
-        margin-left: -40px;
+        margin-left: -80px;
     }
 
     .skills__iconsContainer{
@@ -219,7 +239,15 @@
 
 }
 @media only screen and (max-width: 380px){
-
+    #resume__responsive2,#resume__responsive4{
+        padding:0;
+    }
+    #resume__responsive3{
+        padding-left: 16px;
+    }
+    #resume__responsive5{
+        padding-left: 8px;
+    }
     .resume__title p {
         font-size: 11px;
     }
@@ -246,6 +274,15 @@
 }
 
 @media only screen and (max-width: 330px){
+    #resume__responsive5,#resume__responsive3{
+        padding: 0;
+    }
+    #resume__responsive6,#resume__responsive7{
+        padding-left: 8px;
+    }
+    #resume__responsive8,#resume__responsive{
+        padding-left: 16px;
+    }
 
     .skills__iconsContainer{
         margin-left: -44px;

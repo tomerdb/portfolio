@@ -19,10 +19,10 @@ function Header({handleNextPager}) {
         <div className="header__container">
           <div className="title__container">
             <div data-aos="flip-right" className="title">
-              <h1>Hi I'm Tomer</h1>
+              <h1>Hi<span>,</span> I'm Tomer</h1>
             </div>
             <div data-aos="zoom-in" className="title__secendery">
-              <h4>I'm Tel-Aviv Based <span>ReactJS Developer</span> Front-End React Developer</h4>
+              <h4>I'm a Tel-Aviv Based <span>ReactJS Developer</span> Front-End React Developer</h4>
             </div>
             <div data-aos="zoom-in" className="header__links">
               <a href="https://www.facebook.com/tomer.harari.3">

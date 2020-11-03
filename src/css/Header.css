@@ -37,6 +37,9 @@
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
+.title h1 span{
+    font-size: 40px;
+}
 
 .title__secendery h4 {
     font-weight: 400;
